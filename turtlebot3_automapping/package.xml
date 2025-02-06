@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>turtlebot3_automapping</name>
+  <version>1.0.0</version>
+  <description>
+    Turtlebot3 Automaticly mapping: This package is using for developing the Turtlebot3
+    to create map and auto generate the map.
+  </description>
+  <maintainer email="t.thitipong@aimslab.com">Thitipong T.</maintainer>
+  <license>Apache-2.0</license>
+  <url type="website">http://aimslab.kmitl.ac.th</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+
+</package>

@@ -1,0 +1,101 @@
+<sdf version="1.5">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <!-- 14x10m room walls -->
+    <model name="room_walls">
+      <static>true</static>
+      <link name="walls">
+        <collision name="wall_1">
+          <pose>7 0 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 10 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall_1_visual">
+          <pose>7 0 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 10 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="wall_2">
+          <pose>-7 0 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 10 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall_2_visual">
+          <pose>-7 0 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 10 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="wall_3">
+          <pose>0 5 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>14 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall_3_visual">
+          <pose>0 5 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>14 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="wall_4">
+          <pose>0 -5 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>14 0.2 2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall_4_visual">
+          <pose>0 -5 1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>14 0.2 2</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
+
