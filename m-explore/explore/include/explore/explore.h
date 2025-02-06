@@ -111,7 +111,6 @@ private:
   bool visualize_;
 
   ros::Time start_time_mapping_;
-  ros::Duration mapping_time_;
 };
 }
 

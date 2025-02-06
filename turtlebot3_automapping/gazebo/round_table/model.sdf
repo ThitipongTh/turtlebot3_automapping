@@ -9,7 +9,7 @@
       <visual name="visual_top">
         <geometry>
           <cylinder>
-            <radius>0.75</radius>
+            <radius>1.7</radius>
             <length>0.05</length>
           </cylinder>
         </geometry>
@@ -20,7 +20,7 @@
       <collision name="collision_top">
         <geometry>
           <cylinder>
-            <radius>1.5</radius>
+            <radius>1.7</radius>
             <length>0.05</length>
           </cylinder>
         </geometry>
@@ -29,7 +29,7 @@
 
     <!-- Table Legs -->
     <link name="table_leg_1">
-      <pose>0.4 0.4 0.375 0 0 0</pose>
+      <pose>0.7 0.7 0.375 0 0 0</pose>
       <visual name="visual_leg_1">
         <geometry>
           <cylinder>
@@ -52,7 +52,7 @@
     </link>
 
     <link name="table_leg_2">
-      <pose>-0.4 0.4 0.375 0 0 0</pose>
+      <pose>-0.7 0.7 0.375 0 0 0</pose>
       <visual name="visual_leg_2">
         <geometry>
           <cylinder>
@@ -75,7 +75,7 @@
     </link>
 
     <link name="table_leg_3">
-      <pose>-0.4 -0.4 0.375 0 0 0</pose>
+      <pose>-0.7 -0.7 0.375 0 0 0</pose>
       <visual name="visual_leg_3">
         <geometry>
           <cylinder>
@@ -98,7 +98,7 @@
     </link>
 
     <link name="table_leg_4">
-      <pose>0.4 -0.4 0.375 0 0 0</pose>
+      <pose>0.7 -0.7 0.375 0 0 0</pose>
       <visual name="visual_leg_4">
         <geometry>
           <cylinder>

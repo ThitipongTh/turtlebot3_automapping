@@ -290,8 +290,8 @@ void Explore::stop()
 {
   move_base_client_.cancelAllGoals();
   exploring_timer_.stop();
-  mapping_time_ = ros::Time::now() - start_time_mapping_;
-  ROS_INFO("Exploration time: %.2f seconds", mapping_time_.toSec());
+  ros::Duration mapping_time_ = ros::Time::now() - start_time_mapping_;
+  ROS_INFO("Exploration time: %.2f seconds", mapping_time_.toSec()/30.0);
   ROS_INFO("Exploration stopped.");
 }
 

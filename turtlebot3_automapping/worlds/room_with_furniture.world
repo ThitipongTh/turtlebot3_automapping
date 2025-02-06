@@ -88,7 +88,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='Wall'>
-      <pose>0.638412 0.633746 0 0 -0 0</pose>
+      <pose>0.065107 0.021487 0 0 -0 0</pose>
       <link name='Wall_16'>
         <collision name='Wall_16_Collision'>
           <geometry>
@@ -270,1495 +270,6 @@
         <kinematic>0</kinematic>
       </link>
       <static>1</static>
-    </model>
-    <model name='round_table_with_chairs_1.5m'>
-      <model name='chair_1'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>0 -1 0 0 -0 0</pose>
-      </model>
-      <model name='chair_2'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>0.866025 -0.5 0 0 -0 1.0462</pose>
-      </model>
-      <model name='chair_3'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>0.866025 0.5 0 0 -0 2.0944</pose>
-      </model>
-      <model name='chair_4'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>0 1 0 0 -0 3.14159</pose>
-      </model>
-      <model name='chair_5'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>-0.866025 0.5 0 0 -0 -2.0944</pose>
-      </model>
-      <model name='chair_6'>
-        <static>1</static>
-        <link name='chair_base'>
-          <visual name='seat_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='seat_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.5 0.05</size>
-              </box>
-            </geometry>
-            <pose>0 0 0.45 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='backrest_visual'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-              <diffuse>0.9 0.6 0.4 1</diffuse>
-            </material>
-          </visual>
-          <collision name='backrest_collision'>
-            <geometry>
-              <box>
-                <size>0.5 0.05 0.5</size>
-              </box>
-            </geometry>
-            <pose>0 -0.275 0.7 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg1_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg1_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg2_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg2_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg3_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg3_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <visual name='leg4_visual'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <material>
-              <ambient>0.5 0.5 0.5 1</ambient>
-              <diffuse>0.6 0.6 0.6 1</diffuse>
-            </material>
-          </visual>
-          <collision name='leg4_collision'>
-            <geometry>
-              <cylinder>
-                <radius>0.025</radius>
-                <length>0.45</length>
-              </cylinder>
-            </geometry>
-            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>-0.866025 -0.5 0 0 -0 -1.0462</pose>
-      </model>
-      <model name='round_table'>
-        <static>1</static>
-        <link name='table_top'>
-          <pose>0 0 0.75 0 -0 0</pose>
-          <visual name='visual_top'>
-            <geometry>
-              <cylinder>
-                <radius>0.75</radius>
-                <length>0.05</length>
-              </cylinder>
-            </geometry>
-            <material>
-              <ambient>0.8 0.5 0.3 1</ambient>
-            </material>
-          </visual>
-          <collision name='collision_top'>
-            <geometry>
-              <cylinder>
-                <radius>1.5</radius>
-                <length>0.05</length>
-              </cylinder>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <link name='table_leg_1'>
-          <pose>0.4 0.4 0.375 0 -0 0</pose>
-          <visual name='visual_leg_1'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <material>
-              <ambient>0.6 0.3 0.1 1</ambient>
-            </material>
-          </visual>
-          <collision name='collision_leg_1'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <link name='table_leg_2'>
-          <pose>-0.4 0.4 0.375 0 -0 0</pose>
-          <visual name='visual_leg_2'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <material>
-              <ambient>0.6 0.3 0.1 1</ambient>
-            </material>
-          </visual>
-          <collision name='collision_leg_2'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <link name='table_leg_3'>
-          <pose>-0.4 -0.4 0.375 0 -0 0</pose>
-          <visual name='visual_leg_3'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <material>
-              <ambient>0.6 0.3 0.1 1</ambient>
-            </material>
-          </visual>
-          <collision name='collision_leg_3'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <link name='table_leg_4'>
-          <pose>0.4 -0.4 0.375 0 -0 0</pose>
-          <visual name='visual_leg_4'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <material>
-              <ambient>0.6 0.3 0.1 1</ambient>
-            </material>
-          </visual>
-          <collision name='collision_leg_4'>
-            <geometry>
-              <cylinder>
-                <radius>0.05</radius>
-                <length>0.75</length>
-              </cylinder>
-            </geometry>
-            <max_contacts>10</max_contacts>
-            <surface>
-              <contact>
-                <ode/>
-              </contact>
-              <bounce/>
-              <friction>
-                <torsional>
-                  <ode/>
-                </torsional>
-                <ode/>
-              </friction>
-            </surface>
-          </collision>
-          <self_collide>0</self_collide>
-          <enable_wind>0</enable_wind>
-          <kinematic>0</kinematic>
-        </link>
-        <pose>0 0 0 0 -0 0</pose>
-      </model>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.065403 0.849128 0 0 -0 0</pose>
     </model>
     <model name='chairs_10'>
       <model name='chair_1'>
@@ -3913,9 +2424,88 @@
       </model>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.582795 -3.55545 0 0 -0 0</pose>
+      <pose>-0.290553 -3.34782 0 0 -0 0</pose>
     </model>
-    <model name='round_table_with_chairs_1.5m_0'>
+    <model name='cafe_table'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='surface'>
+          <pose>0 0 0.755 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.913 0.913 0.04</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='column'>
+          <pose>0 0 0.37 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.042 0.042 0.74</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='base'>
+          <pose>0 0 0.02 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.56 0.56 0.04</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://cafe_table/meshes/cafe_table.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-4.96577 3.08108 0 0 -0 0</pose>
+    </model>
+    <model name='table_5chairs'>
       <model name='chair_1'>
         <static>1</static>
         <link name='chair_base'>
@@ -4344,7 +2934,7 @@
           <enable_wind>0</enable_wind>
           <kinematic>0</kinematic>
         </link>
-        <pose>0.866025 -0.5 0 0 -0 1.0462</pose>
+        <pose>0.951057 -0.309017 0 0 -0 1.25664</pose>
       </model>
       <model name='chair_3'>
         <static>1</static>
@@ -4559,7 +3149,7 @@
           <enable_wind>0</enable_wind>
           <kinematic>0</kinematic>
         </link>
-        <pose>0.866025 0.5 0 0 -0 2.0944</pose>
+        <pose>0.587785 0.809017 0 0 -0 2.51327</pose>
       </model>
       <model name='chair_4'>
         <static>1</static>
@@ -4774,7 +3364,7 @@
           <enable_wind>0</enable_wind>
           <kinematic>0</kinematic>
         </link>
-        <pose>0 1 0 0 -0 3.14159</pose>
+        <pose>-0.587785 0.809017 0 0 0 -2.51327</pose>
       </model>
       <model name='chair_5'>
         <static>1</static>
@@ -4989,9 +3579,208 @@
           <enable_wind>0</enable_wind>
           <kinematic>0</kinematic>
         </link>
-        <pose>-0.866025 0.5 0 0 -0 -2.0944</pose>
+        <pose>-0.951057 -0.309017 0 0 -0 -1.25664</pose>
       </model>
-      <model name='chair_6'>
+      <model name='round_table'>
+        <static>1</static>
+        <link name='table_top'>
+          <pose>0 0 0.75 0 -0 0</pose>
+          <visual name='visual_top'>
+            <geometry>
+              <cylinder>
+                <radius>0.8</radius>
+                <length>0.05</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+            </material>
+          </visual>
+          <collision name='collision_top'>
+            <geometry>
+              <cylinder>
+                <radius>0.8</radius>
+                <length>0.05</length>
+              </cylinder>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <link name='table_leg_1'>
+          <pose>0.4 0.4 0.375 0 -0 0</pose>
+          <visual name='visual_leg_1'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>0.6 0.3 0.1 1</ambient>
+            </material>
+          </visual>
+          <collision name='collision_leg_1'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <link name='table_leg_2'>
+          <pose>-0.4 0.4 0.375 0 -0 0</pose>
+          <visual name='visual_leg_2'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>0.6 0.3 0.1 1</ambient>
+            </material>
+          </visual>
+          <collision name='collision_leg_2'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <link name='table_leg_3'>
+          <pose>-0.4 -0.4 0.375 0 -0 0</pose>
+          <visual name='visual_leg_3'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>0.6 0.3 0.1 1</ambient>
+            </material>
+          </visual>
+          <collision name='collision_leg_3'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <link name='table_leg_4'>
+          <pose>0.4 -0.4 0.375 0 -0 0</pose>
+          <visual name='visual_leg_4'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <ambient>0.6 0.3 0.1 1</ambient>
+            </material>
+          </visual>
+          <collision name='collision_leg_4'>
+            <geometry>
+              <cylinder>
+                <radius>0.05</radius>
+                <length>0.75</length>
+              </cylinder>
+            </geometry>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>0 0 0 0 -0 0</pose>
+      </model>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>-2.0793 -1.36066 0 0 -0 0</pose>
+    </model>
+    <model name='table_5chairs_0'>
+      <model name='chair_1'>
         <static>1</static>
         <link name='chair_base'>
           <visual name='seat_visual'>
@@ -5204,7 +3993,867 @@
           <enable_wind>0</enable_wind>
           <kinematic>0</kinematic>
         </link>
-        <pose>-0.866025 -0.5 0 0 -0 -1.0462</pose>
+        <pose>0 -1 0 0 -0 0</pose>
+      </model>
+      <model name='chair_2'>
+        <static>1</static>
+        <link name='chair_base'>
+          <visual name='seat_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='seat_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='backrest_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='backrest_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg1_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg1_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg2_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg2_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg3_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg3_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg4_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg4_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>0.951057 -0.309017 0 0 -0 1.25664</pose>
+      </model>
+      <model name='chair_3'>
+        <static>1</static>
+        <link name='chair_base'>
+          <visual name='seat_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='seat_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='backrest_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='backrest_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg1_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg1_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg2_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg2_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg3_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg3_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg4_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg4_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>0.587785 0.809017 0 0 -0 2.51327</pose>
+      </model>
+      <model name='chair_4'>
+        <static>1</static>
+        <link name='chair_base'>
+          <visual name='seat_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='seat_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='backrest_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='backrest_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg1_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg1_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg2_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg2_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg3_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg3_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg4_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg4_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>-0.587785 0.809017 0 0 0 -2.51327</pose>
+      </model>
+      <model name='chair_5'>
+        <static>1</static>
+        <link name='chair_base'>
+          <visual name='seat_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='seat_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.5 0.05</size>
+              </box>
+            </geometry>
+            <pose>0 0 0.45 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='backrest_visual'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <material>
+              <ambient>0.8 0.5 0.3 1</ambient>
+              <diffuse>0.9 0.6 0.4 1</diffuse>
+            </material>
+          </visual>
+          <collision name='backrest_collision'>
+            <geometry>
+              <box>
+                <size>0.5 0.05 0.5</size>
+              </box>
+            </geometry>
+            <pose>0 -0.275 0.7 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg1_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg1_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg2_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg2_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg3_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg3_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='leg4_visual'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.6 0.6 0.6 1</diffuse>
+            </material>
+          </visual>
+          <collision name='leg4_collision'>
+            <geometry>
+              <cylinder>
+                <radius>0.025</radius>
+                <length>0.45</length>
+              </cylinder>
+            </geometry>
+            <pose>-0.2 -0.2 0.225 0 -0 0</pose>
+            <max_contacts>10</max_contacts>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+              <bounce/>
+              <friction>
+                <torsional>
+                  <ode/>
+                </torsional>
+                <ode/>
+              </friction>
+            </surface>
+          </collision>
+          <self_collide>0</self_collide>
+          <enable_wind>0</enable_wind>
+          <kinematic>0</kinematic>
+        </link>
+        <pose>-0.951057 -0.309017 0 0 -0 -1.25664</pose>
       </model>
       <model name='round_table'>
         <static>1</static>
@@ -5213,7 +4862,7 @@
           <visual name='visual_top'>
             <geometry>
               <cylinder>
-                <radius>0.75</radius>
+                <radius>0.8</radius>
                 <length>0.05</length>
               </cylinder>
             </geometry>
@@ -5224,7 +4873,7 @@
           <collision name='collision_top'>
             <geometry>
               <cylinder>
-                <radius>1.5</radius>
+                <radius>0.8</radius>
                 <length>0.05</length>
               </cylinder>
             </geometry>
@@ -5402,13 +5051,13 @@
       </model>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>-3.08993 0.06674 0 0 -0 0</pose>
+      <pose>2.42874 -1.22929 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>59 955000000</sim_time>
-      <real_time>60 282591898</real_time>
-      <wall_time>1738818461 288714123</wall_time>
-      <iterations>59955</iterations>
+      <sim_time>3907 656000000</sim_time>
+      <real_time>3911 407821582</real_time>
+      <wall_time>1738837369 678270689</wall_time>
+      <iterations>3907656</iterations>
       <model name='Wall'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -5437,104 +5086,114 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+      <model name='cafe_table'>
+        <pose>-5.5 4.25 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-5.5 4.25 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='chairs_10'>
-        <pose>0 -4.25 0 0 -0 0</pose>
+        <pose>0 -4.45 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <model name='chair_1'>
-          <pose>0.325 -4.25 0 0 -0 0</pose>
+          <pose>0.325 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>0.325 -4.25 0 0 -0 0</pose>
+            <pose>0.325 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_10'>
-          <pose>-3.325 -4.25 0 0 -0 0</pose>
+          <pose>-3.325 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-3.325 -4.25 0 0 -0 0</pose>
+            <pose>-3.325 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_2'>
-          <pose>1.075 -4.25 0 0 -0 0</pose>
+          <pose>1.075 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>1.075 -4.25 0 0 -0 0</pose>
+            <pose>1.075 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_3'>
-          <pose>1.825 -4.25 0 0 -0 0</pose>
+          <pose>1.825 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>1.825 -4.25 0 0 -0 0</pose>
+            <pose>1.825 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_4'>
-          <pose>2.575 -4.25 0 0 -0 0</pose>
+          <pose>2.575 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>2.575 -4.25 0 0 -0 0</pose>
+            <pose>2.575 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_5'>
-          <pose>3.325 -4.25 0 0 -0 0</pose>
+          <pose>3.325 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>3.325 -4.25 0 0 -0 0</pose>
+            <pose>3.325 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_6'>
-          <pose>-0.325 -4.25 0 0 -0 0</pose>
+          <pose>-0.325 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-0.325 -4.25 0 0 -0 0</pose>
+            <pose>-0.325 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_7'>
-          <pose>-1.075 -4.25 0 0 -0 0</pose>
+          <pose>-1.075 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-1.075 -4.25 0 0 -0 0</pose>
+            <pose>-1.075 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_8'>
-          <pose>-1.825 -4.25 0 0 -0 0</pose>
+          <pose>-1.825 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-1.825 -4.25 0 0 -0 0</pose>
+            <pose>-1.825 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_9'>
-          <pose>-2.575 -4.25 0 0 -0 0</pose>
+          <pose>-2.575 -4.45 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-2.575 -4.25 0 0 -0 0</pose>
+            <pose>-2.575 -4.45 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
@@ -5551,196 +5210,176 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='round_table_with_chairs_1.5m'>
-        <pose>-3.5 -1 0 0 -0 0</pose>
+      <model name='table_5chairs'>
+        <pose>-2.5 -1.5 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <model name='chair_1'>
-          <pose>-3.5 -2 0 0 -0 0</pose>
+          <pose>-2.5 -2.5 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-3.5 -2 0 0 -0 0</pose>
+            <pose>-2.5 -2.5 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_2'>
-          <pose>-2.63397 -1.5 0 0 -0 1.0462</pose>
+          <pose>-1.54894 -1.80902 0 0 -0 1.25664</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-2.63397 -1.5 0 0 -0 1.0462</pose>
+            <pose>-1.54894 -1.80902 0 0 -0 1.25664</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_3'>
-          <pose>-2.63397 -0.5 0 0 -0 2.0944</pose>
+          <pose>-1.91221 -0.690983 0 0 -0 2.51327</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-2.63397 -0.5 0 0 -0 2.0944</pose>
+            <pose>-1.91221 -0.690983 0 0 -0 2.51327</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_4'>
-          <pose>-3.5 0 0 0 -0 3.14159</pose>
+          <pose>-3.08778 -0.690983 0 0 0 -2.51327</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-3.5 0 0 0 -0 3.14159</pose>
+            <pose>-3.08778 -0.690983 0 0 0 -2.51327</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_5'>
-          <pose>-4.36602 -0.5 0 0 0 -2.0944</pose>
+          <pose>-3.45106 -1.80902 0 0 0 -1.25664</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-4.36602 -0.5 0 0 0 -2.0944</pose>
-            <velocity>0 0 0 0 -0 0</velocity>
-            <acceleration>0 0 0 0 -0 0</acceleration>
-            <wrench>0 0 0 0 -0 0</wrench>
-          </link>
-        </model>
-        <model name='chair_6'>
-          <pose>-4.36602 -1.5 0 0 0 -1.0462</pose>
-          <scale>1 1 1</scale>
-          <link name='chair_base'>
-            <pose>-4.36602 -1.5 0 0 0 -1.0462</pose>
+            <pose>-3.45106 -1.80902 0 0 0 -1.25664</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='round_table'>
-          <pose>-3.5 -1 0 0 -0 0</pose>
+          <pose>-2.5 -1.5 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='table_leg_1'>
-            <pose>-3.1 -0.6 0.375 0 -0 0</pose>
+            <pose>-2.1 -1.1 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_2'>
-            <pose>-3.9 -0.6 0.375 0 -0 0</pose>
+            <pose>-2.9 -1.1 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_3'>
-            <pose>-3.9 -1.4 0.375 0 -0 0</pose>
+            <pose>-2.9 -1.9 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_4'>
-            <pose>-3.1 -1.4 0.375 0 -0 0</pose>
+            <pose>-2.1 -1.9 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_top'>
-            <pose>-3.5 -1 0.75 0 -0 0</pose>
+            <pose>-2.5 -1.5 0.75 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
       </model>
-      <model name='round_table_with_chairs_1.5m_0'>
-        <pose>0 -1 0 0 -0 0</pose>
+      <model name='table_5chairs_0'>
+        <pose>1.5 -1.5 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <model name='chair_1'>
-          <pose>0 -2 0 0 -0 0</pose>
+          <pose>1.5 -2.5 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>0 -2 0 0 -0 0</pose>
+            <pose>1.5 -2.5 0 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_2'>
-          <pose>0.866025 -1.5 0 0 -0 1.0462</pose>
+          <pose>2.45106 -1.80902 0 0 -0 1.25664</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>0.866025 -1.5 0 0 -0 1.0462</pose>
+            <pose>2.45106 -1.80902 0 0 -0 1.25664</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_3'>
-          <pose>0.866025 -0.5 0 0 -0 2.0944</pose>
+          <pose>2.08778 -0.690983 0 0 -0 2.51327</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>0.866025 -0.5 0 0 -0 2.0944</pose>
+            <pose>2.08778 -0.690983 0 0 -0 2.51327</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_4'>
-          <pose>0 0 0 0 -0 3.14159</pose>
+          <pose>0.912215 -0.690983 0 0 0 -2.51327</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>0 0 0 0 -0 3.14159</pose>
+            <pose>0.912215 -0.690983 0 0 0 -2.51327</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='chair_5'>
-          <pose>-0.866025 -0.5 0 0 0 -2.0944</pose>
+          <pose>0.548943 -1.80902 0 0 0 -1.25664</pose>
           <scale>1 1 1</scale>
           <link name='chair_base'>
-            <pose>-0.866025 -0.5 0 0 0 -2.0944</pose>
-            <velocity>0 0 0 0 -0 0</velocity>
-            <acceleration>0 0 0 0 -0 0</acceleration>
-            <wrench>0 0 0 0 -0 0</wrench>
-          </link>
-        </model>
-        <model name='chair_6'>
-          <pose>-0.866025 -1.5 0 0 0 -1.0462</pose>
-          <scale>1 1 1</scale>
-          <link name='chair_base'>
-            <pose>-0.866025 -1.5 0 0 0 -1.0462</pose>
+            <pose>0.548943 -1.80902 0 0 0 -1.25664</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
         </model>
         <model name='round_table'>
-          <pose>0 -1 0 0 -0 0</pose>
+          <pose>1.5 -1.5 0 0 -0 0</pose>
           <scale>1 1 1</scale>
           <link name='table_leg_1'>
-            <pose>0.4 -0.6 0.375 0 -0 0</pose>
+            <pose>1.9 -1.1 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_2'>
-            <pose>-0.4 -0.6 0.375 0 -0 0</pose>
+            <pose>1.1 -1.1 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_3'>
-            <pose>-0.4 -1.4 0.375 0 -0 0</pose>
+            <pose>1.1 -1.9 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_leg_4'>
-            <pose>0.4 -1.4 0.375 0 -0 0</pose>
+            <pose>1.9 -1.9 0.375 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
           </link>
           <link name='table_top'>
-            <pose>0 -1 0.75 0 -0 0</pose>
+            <pose>1.5 -1.5 0.75 0 -0 0</pose>
             <velocity>0 0 0 0 -0 0</velocity>
             <acceleration>0 0 0 0 -0 0</acceleration>
             <wrench>0 0 0 0 -0 0</wrench>
@@ -5753,9 +5392,9 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-11.7577 2.66656 16.4186 -0 1.0098 -0.255977</pose>
-        <view_controller>ortho</view_controller>
-        <projection_type>orthographic</projection_type>
+        <pose>-12.7192 8.05347 20.1468 0 0.9338 -0.716052</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
       </camera>
     </gui>
   </world>

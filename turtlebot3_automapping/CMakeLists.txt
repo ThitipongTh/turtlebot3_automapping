@@ -31,6 +31,11 @@ catkin_package(
 ## Install ##
 #############
 
+catkin_install_python(PROGRAMS 
+  scripts/movetopoint.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 #############
 ## Testing ##
 #############
