@@ -21,6 +21,6 @@ catkin_make
 ```
 ## Reference Package
 - [Turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
-- [Turtlebot3 Simulation](ttps://github.com/ROBOTIS-GIT/turtlebot3_simulations)
+- [Turtlebot3 Simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
 - [Turtlebot3 Message](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
 - [Exploration Lite](https://github.com/hrnr/m-explore)
