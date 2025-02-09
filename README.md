@@ -15,7 +15,8 @@ cd ~/catkin_ws/src
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone -b https://github.com/hrnr/m-explore.git
+git clone https://github.com/hrnr/m-explore.git
+git clone https://github.com/AtsushiSakai/rosbag_to_csv
 cd ~/catkin_ws
 catkin_make
 ```
@@ -24,3 +25,4 @@ catkin_make
 - [Turtlebot3 Simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
 - [Turtlebot3 Message](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
 - [Exploration Lite](https://github.com/hrnr/m-explore)
+- [ROS Bag to CSV](https://github.com/AtsushiSakai/rosbag_to_csv)
